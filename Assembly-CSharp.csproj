@@ -51,17 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Basic aerodynamics\Scripts\BasicAerodynamics.cs" />
-     <Compile Include="Assets\Basic aerodynamics\Scripts\CMAV.cs" />
-     <Compile Include="Assets\Basic aerodynamics\Scripts\COM.cs" />
-     <Compile Include="Assets\Basic aerodynamics\Scripts\DisplaySpeed.cs" />
-     <Compile Include="Assets\Basic aerodynamics\Scripts\environmentControllerScript.cs" />
-     <Compile Include="Assets\Basic aerodynamics\Scripts\followTheRocket.cs" />
-     <Compile Include="Assets\Basic aerodynamics\Scripts\LaunchActivation.cs" />
-     <Compile Include="Assets\Basic aerodynamics\Scripts\motorController.cs" />
-     <Compile Include="Assets\Basic aerodynamics\Scripts\PlaneController.cs" />
-     <Compile Include="Assets\Basic aerodynamics\Scripts\SurfaceControll.cs" />
-     <Compile Include="Assets\Basic aerodynamics\Scripts\thrust.cs" />
      <Compile Include="Assets\test1.cs" />
      <Compile Include="Assets\test2.cs" />
      <Compile Include="Assets\test3.cs" />

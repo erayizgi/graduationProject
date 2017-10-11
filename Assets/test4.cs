@@ -22,10 +22,10 @@ public class test4 : MonoBehaviour {
 		Debug.Log (rb.centerOfMass);
 		zet = rb.centerOfMass.z;
 	}
-	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (transform.rotation.x);
+		centerOfMass.transform.localPosition = rb.centerOfMass;
+		Debug.Log (rb.centerOfMass);
 		if (Input.GetKey (KeyCode.T)) {
 			power += 100;
 		}
@@ -35,13 +35,14 @@ public class test4 : MonoBehaviour {
 		}
 		if (rb.velocity.magnitude > 40) {
 			//rb.AddForceAtPosition (new Vector3(0, 4000, 7000),Nose.transform.position);
-			rb.centerOfMass = new Vector3(-2.5f,rb.centerOfMass.y,-2f);
+			rb.centerOfMass = new Vector3(rb.centerOfMass.x,rb.centerOfMass.y,-2.7f);
 			rb.AddForce (Vector3.up * 14000);
 
 		}
-		if (transform.rotation.x < -0.15) {
-			//rb.centerOfMass = new Vector3(rb.centerOfMass.x,rb.centerOfMass.y,-1.6f);
-
+		if (transform.rotation.x < -0.05f) { //-0.13f
+			//rb.centerOfMass = new Vector3(rb.centerOfMass.x,rb.centerOfMass.y,0f);
+			//rb.AddForceAtPosition (Vector3.down * 7000,Nose.transform.position);
+		
 		}
 	
 		rb.AddForce (Vector3.forward * power * 5);
